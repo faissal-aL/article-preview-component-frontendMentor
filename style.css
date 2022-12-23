@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+/* font name : Manrope weights 500 and 700 */
+
+body{
+    background-color: hsl(210, 46%, 95%);;
+}
+main{  
+    background-color: white;
+    position: relative;
+    font-family: manrope;
+    display: flex;
+    border-radius: 10px;
+    width: 60%;
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0px 10px 30px hsla(212, 23%, 69%, 0.296);
+}
+.image_drawer{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 40%;
+}
+h1{
+    color: hsl(217, 19%, 35%);;
+    margin : 5% 10% 4% 9%;
+    font-size: 1.5rem;
+}
+
+.text_side{
+    width: 60%;
+}
+p{
+    color:hsl(212, 23%, 69%);
+    margin : 3% 13% 2% 9%;
+}
+h2{
+    color: hsl(217, 19%, 35%);;
+    display: flex;
+    flex-direction: column;
+    margin : 5% 7% 5% 5%;
+    font-size:1rem ;
+}
+.avatar{
+    width:3.3em;
+    border-radius: 40px;
+}
+.avatar_and_name {
+    position: relative;
+    margin : 0% 10% 5% 9%;
+    display: flex;
+    align-items: center;
+}
+span{
+    margin-top: 4px;
+    color: hsl(212, 23%, 69%);
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+.share{
+    right: -8em;
+    bottom: 8em;
+    box-shadow: 0px 2px 5px grey;
+    display:none;
+    align-items: center;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.3rem;
+    height: 50px;
+    justify-content: space-evenly;
+    color: hsl(212, 23%, 69%);
+    background-color: hsl(217, 19%, 35%);
+    width: 20em;
+    border-radius: 10px;
+}
+.share:after {
+    display: block;
+    position: absolute;
+    content:'';
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 12px solid hsl(217, 19%, 35%);;
+    bottom: -22%;
+  }
+
+.share_icon{
+    position: absolute;
+    bottom: 1.6em;
+    right:0em;
+    width: 23px;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: hsl(210, 46%, 95%);
+}
+.share_icon:hover , .icon:hover{
+    cursor :pointer;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.share_icon_mobile{
+    display: none;
+}
+@media screen and (width<1000px) {
+    main{
+        width: 90%;
+    }
+}
+
+@media screen and (width<400px) {
+    main{  
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        width: 90%;
+        margin-top: 20%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .image_drawer{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        height:200px;
+        width: 100%;
+        object-fit: cover;
+    }
+    h1{
+        margin : 10% 10% 4% 10%;
+        font-size: 1.1rem;
+    }
+    .text_side{
+        width: 100%;
+    }
+    p{
+        margin : 2% 10% 7% 10%;
+        font-size: 0.83rem;
+    }
+    h2{
+        font-size:0.85rem ;
+        margin : 2% 10% 7% 5%; 
+    }
+    .avatar{
+        width:2.6em;
+        margin : 2% 0% 7% 10%; 
+    }
+    .avatar_and_name {
+        position: relative;
+        margin: 0;
+        align-items: center;
+    }
+    span{
+        font-size: 0.78rem;
+    }
+    .share{
+        width: 100%;
+        margin: 0;
+        display: none;
+        right: -2.9em;
+        bottom: -1.5em;
+        box-shadow:none;      
+        position: static;
+        font-size: 0.7rem;
+        height: 70px;
+        width: 123.5%;
+        border: none;
+        border-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+    }
+    .share:after {
+        display: none;
+      }
+      .share_icon_mobile{
+        display: flex;
+        width: 15px;
+        height: 15px;
+        padding: 3px;
+        border-radius: 40px;
+        background-color: hsl(210, 46%, 95%);
+      }
+    .share_icon{
+        bottom: 1.5em;
+        right:1em;
+        width: 15px;
+        padding: 9px;
+    }
+    .icon{
+        width: 20px;
+        height: 20px;
+    }
+}
